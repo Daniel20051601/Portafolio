@@ -1,14 +1,14 @@
 *{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
     margin:0;
     padding:0;  
-    background: rgb(61, 65, 70) ;
+    background: linear-gradient(90deg, hsl(210, 17%, 24%), hsl(230, 17%, 36%)) ;
 }
 
 header{
-    background: linear-gradient(90deg, rgb(61, 65, 70)20%, rgb(51, 55, 60) );
+    background: linear-gradient(90deg, hsl(210, 17%, 24%), hsl(230, 17%, 36%)) ;
     height:50px;
     font-size:25px;
     display:flex;
@@ -18,15 +18,22 @@ header{
 
 .update{
     margin-left: 50px;
+    text-decoration: none;
+}
+
+.material-symbols-outlined{
+    color: hsl(180, 17%, 70%);;
+    font-size: 40px;
+
 }
 
 .letras{
-    color:rgb(61, 65, 70);
+    color:transparent;
     text-align: center;
-    margin-top: 100px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 500;
-    font-size: 3em;
+    margin-top: 130px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
 }
 
 .H{
@@ -37,20 +44,20 @@ header{
 
 .I1{
     animation: teclado 1s ;
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
     animation-fill-mode: forwards;
     margin-right: 10PX;
 }
 
 .M1{
     animation: teclado 1s  ;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 .Y{
     animation: teclado 1s ;
-    animation-delay: 2.5s;
+    animation-delay: 1.2s;
     animation-fill-mode: forwards;
     margin-right: 10PX;
 }
@@ -58,107 +65,107 @@ header{
 
 .N1{
     animation: teclado 1s;
-    animation-delay: 4s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 
 
 .A1{
     animation: teclado 1s;
-    animation-delay: 4.5s;
+    animation-delay: 2.2s;
     animation-fill-mode: forwards;
 }
 
 .M2{
     animation: teclado 1s;
-    animation-delay: 5s;
+    animation-delay: 2.4s;
     animation-fill-mode: forwards;
 }
 
 .E1{
     animation: teclado 1s;
-    animation-delay: 5.5s;
+    animation-delay: 2.6s;
     animation-fill-mode: forwards;
     margin-right: 10PX;
 }
 
 .I2{
     animation: teclado 1s;
-    animation-delay: 7s;
+    animation-delay: 3.4s;
     animation-fill-mode: forwards;
 }
 
 .S{
     animation: teclado 1s;
-    animation-delay: 7.5s;
+    animation-delay: 3.6s;
     animation-fill-mode: forwards;
     margin-right: 10PX;
 }
 
 .R{
     animation: teclado 1s;
-    animation-delay: 9s;
+    animation-delay: 4.4s;
     animation-fill-mode: forwards;
 }
 
 .A2{
     animation: teclado 1s;
-    animation-delay: 9.5s;
+    animation-delay: 4.6s;
     animation-fill-mode: forwards;
 }
 
 .M3{
     animation: teclado 1s;
-    animation-delay: 10s;
+    animation-delay: 4.8s;
     animation-fill-mode: forwards;
 }
 
 .O1{
     animation: teclado 1s;
-    animation-delay: 10.5s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
 }
 
 .N2{
     animation: teclado 1s;
-    animation-delay: 11s;
+    animation-delay: 5.2s;
     animation-fill-mode: forwards;
     margin-right: 10PX;
 }
 
 .E2{
     animation: teclado 1s;
-    animation-delay: 12s;
+    animation-delay: 6s;
     animation-fill-mode: forwards;
 }
 
 .Eme{
     animation: teclado 1s;
-    animation-delay: 12.5s;
+    animation-delay: 6.2s;
     animation-fill-mode: forwards;
 }
 
 .I3{
     animation: teclado 1s;
-    animation-delay: 13s;
+    animation-delay: 6.4s;
     animation-fill-mode: forwards;
 }
 
 .L{
     animation: teclado 1s;
-    animation-delay: 13.5s;
+    animation-delay: 6.6s;
     animation-fill-mode: forwards;
 }
 
 .I4{
     animation: teclado 1s;
-    animation-delay: 14s;
+    animation-delay: 6.8s;
     animation-fill-mode: forwards;
 }
 
 .O2{
     animation: teclado 1s;
-    animation-delay: 14.5s;
+    animation-delay: 7s;
     animation-fill-mode: forwards;
 }
 
@@ -166,26 +173,34 @@ header{
     0%{
         opacity: 0%;
         text-decoration: underline;
+        background-color: rgb(40,40,40);
+        
+    }
+
+    25%{
+        opacity: 25%;
+        text-decoration: underline;
+        background-color: rgb(40,40,40);
+       
     }
 
     50%{
         opacity:50%;
-        text-decoration: underline;
         background-color: rgb(40,40,40);
+        
         
     }
     
 
     100%{
         opacity: 100%;
-        color:white;
+        color:hsl(180, 17%, 70%);
+       
         }
 }
-
+/*
 .espacio{
-    animation:space 2.5s infinite ;
-    animation-fill-mode: forwards;
-    animation-delay: 14s;
+    animation:space 2s infinite 7.5s forwards ;
     color:rgb(61, 65, 70);
 }
 
@@ -209,4 +224,61 @@ header{
         text-decoration: white;
         text-decoration: underline;
         }
+}*/
+
+h2{
+    
+    position:static;
+    text-align: center;
+    animation: subtitulo 1s forwards 7.6s;
+    opacity: 0%;
+    color: hsl(180, 17%, 70%);
+    font-weight: 100;
+    padding: 25px;
+}
+
+@keyframes subtitulo {
+    0%{
+        opacity: 0%;
+        margin-top: 110px;
+    }
+
+    15%{
+        margin-top: 100px;
+    }
+
+    25%{
+        opacity: 25%;
+        margin-top: 90px;
+    }
+
+    50%{
+        opacity: 60%;
+        margin-top: 80px;
+    }
+    100%{
+        opacity: 100%;
+        margin-top: 70px;
+    }
+}
+
+.Flecha{
+    display: flex;
+    color: transparent;
+    justify-content: center;
+    align-items: end;
+    animation: flechaAnimada 1.5s infinite 10s;
+}
+
+@keyframes flechaAnimada {
+
+    0%{
+        padding-top: 70px;
+        color: hsl(180, 17%, 70%);
+    }
+   
+    100%{
+        padding-top: 80px;
+        color: hsl(180, 17%, 70%);
+    }
 }
